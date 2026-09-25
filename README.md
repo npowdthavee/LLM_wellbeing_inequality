@@ -1,4 +1,4 @@
-# LLM Well-Being Inequality
+# Large Language Models Substantially Compress Well-Being Inequality but Largely Preserve Its Socioeconomic Structure
 
 Replication code for the project **Large Language Models Substantially Compress Well-Being Inequality but Largely Preserve Its Socioeconomic Structure**.
 
@@ -86,7 +86,7 @@ To study structural fidelity independently of overall compression, within-group 
 
 ## Reproducibility
 
-The notebooks contain the complete data-processing, prompting, prediction, and analysis code used for the paper. Because the WVS microdata and API credentials are subject to their respective access and licensing conditions, they are not included in the repository.
+The notebooks contain the complete data-processing, prompting, prediction, and analysis code used for the paper. Stored execution outputs have been removed from the repository copies; code and markdown cells are retained. Because the WVS microdata and API credentials are subject to their respective access and licensing conditions, they are not included in the repository.
 
 ## Citation
 
