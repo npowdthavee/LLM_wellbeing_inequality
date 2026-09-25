@@ -1,0 +1,22 @@
+# Local data and generated outputs
+Data/
+data/
+output/
+outputs/
+
+# Environment variables and secrets
+.env
+.env.*
+*.env
+secrets/
+*.key
+
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# OS/editor
+.DS_Store
+.vscode/
+.idea/
