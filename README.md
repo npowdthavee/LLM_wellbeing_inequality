@@ -58,11 +58,15 @@ API keys are not stored in this repository.
 
 ### `3_WVS_Human_LLM_Analysis.ipynb`
 
-Runs the main human-LLM analyses, including raw income gradients in mean life satisfaction and well-being inequality, scale-normalised dispersion profiles, profile-comparison tests, country-fixed-effect RIF variance regressions, RIF-Oaxaca decompositions, distributional-tail analyses, and country-level gradient-fidelity analyses.
+Runs the main human-LLM analyses, including raw income gradients in mean life satisfaction and well-being inequality, scale-normalised dispersion profiles, preregistered profile-comparison tests, country-fixed-effect RIF variance regressions, RIF-Oaxaca decompositions with country-cluster bootstrap confidence intervals, weighting robustness checks, distributional-tail analyses, and country-level gradient-fidelity analyses.
 
 ### `4_WVS_Generalization_Other_Characteristics.ipynb`
 
 Extends the scale-normalised heterogeneity analysis to employment status, educational attainment, marital status, and perceived freedom and control.
+
+### `5_WVS_OLS_Lasso_NonLLM_Benchmark.ipynb`
+
+Implements the post-preregistration supervised benchmark using five-fold out-of-fold OLS and Lasso predictions trained on observed WVS life satisfaction. The notebook compares overall dispersion compression and normalized income-dispersion structural fidelity with the human benchmark and the six LLMs. These models are diagnostic benchmarks rather than directly comparable zero-shot substitutes, because they are trained on observed life-satisfaction outcomes from the study sample.
 
 ## Reproduction order
 
@@ -72,6 +76,7 @@ Run the notebooks in numerical order:
 2. `2_WVS_predict.ipynb` separately for each model
 3. `3_WVS_Human_LLM_Analysis.ipynb`
 4. `4_WVS_Generalization_Other_Characteristics.ipynb`
+5. `5_WVS_OLS_Lasso_NonLLM_Benchmark.ipynb`
 
 The prediction notebook is intentionally designed to run one model at a time. Retain the output CSV from each completed model before proceeding to the main analysis.
 
@@ -86,7 +91,7 @@ To study structural fidelity independently of overall compression, within-group 
 
 ## Reproducibility
 
-The notebooks contain the complete data-processing, prompting, prediction, and analysis code used for the paper. Stored execution outputs have been removed from the repository copies; code and markdown cells are retained. Because the WVS microdata and API credentials are subject to their respective access and licensing conditions, they are not included in the repository.
+The notebooks contain the data-processing, prompting, prediction, primary-analysis, exploratory-analysis, and supervised-benchmark code used for the paper. Stored execution outputs have been removed from the repository copies; code and markdown cells are retained. Because the WVS microdata and API credentials are subject to their respective access and licensing conditions, they are not included in the repository.
 
 ## Citation
 
