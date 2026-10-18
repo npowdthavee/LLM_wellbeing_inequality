@@ -1,6 +1,6 @@
-# Large Language Models Substantially Compress Heterogeneity in Human Well-Being but Largely Preserve Its Socioeconomic Structure
+# Large Language Models Substantially Compress Well-being Dispersion but Largely Preserve Its Socioeconomic Structure
 
-Replication code for the project **Large Language Models Substantially Compress Heterogeneity in Human Well-Being but Largely Preserve Its Socioeconomic Structure**.
+Replication code for the project **Large Language Models Substantially Compress Well-Being Dispersion but Largely Preserve Its Socioeconomic Structure**.
 
 The study examines whether large language models (LLMs) preserve the socioeconomic structure of human well-being heterogeneity even when their predicted responses are substantially less dispersed than human responses. The main analyses use World Values Survey (WVS) Wave 7 data and compare observed life satisfaction with respondent-level predictions from six LLMs.
 
